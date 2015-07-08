@@ -51,3 +51,7 @@ console.log(s.area);
 let test = new testmodule();
 test.showConsoleLog();
 console.log(test.getName());
+
+var foo = require('./foo.js');
+var bar = require('./bar.js');
+console.log(foo(3) + bar(4));
