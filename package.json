@@ -1,0 +1,19 @@
+{
+  "name": "es6features",
+  "version": "1.0.0",
+  "description": "A env for playing around with ES6. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "cole.peterson@possible.com",
+  "license": "ISC",
+  "devDependencies": {
+    "babelify": "^6.1.2",
+    "browser-sync": "^2.7.13",
+    "browserify": "^10.2.4",
+    "gulp": "^3.9.0",
+    "gulp-babel": "^5.1.0",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}
