@@ -1,3 +1,6 @@
+//browserify allows us to use require in a browser.
+import {testmodule} from './testmodule.js';
+
 
 /**
  * Arrow Functions
@@ -21,7 +24,7 @@ class Polygon {
 	}
 
 	sayName() { //class method
-		console.log('Hi there, Robert Cole Peterson, I am a', this.name + '.');
+		console.log('Hi, Robert Cole Peterson, I am a', this.name + '.');
 	}
 }
 
@@ -37,6 +40,14 @@ class Square extends Polygon {
 }
 
 let s = new Square(5);
-
 s.sayName();
 console.log(s.area);
+
+
+/**
+ * Modules
+ */
+
+let test = new testmodule();
+test.showConsoleLog();
+console.log(test.getName());

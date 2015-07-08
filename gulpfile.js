@@ -9,9 +9,12 @@ var reload = browserSync.reload;
  * Get modules, transform ES6 to ES5, bundle all code into 1 file and push to dist folder.
  */
 gulp.task('babelify', function() {
-  browserify('./src/index.js',{debug: true})
+  return browserify('./src/index.js',{debug: true})
     .transform(babelify)
     .bundle()
+    .on("error", function(err) {
+      console.log("Error : " + err.message);
+    })
     .pipe(source('bundle.js'))
     .pipe(gulp.dest("dist"));
 });
